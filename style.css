@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .heading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    padding: 0rem 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #009e5e;
+    height: 54px;
+  }
+  
+  .heading .logo img {
+    width: 122px;
+    margin-top: 2%;
+  }
+  .heading .nav-items {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .heading .nav-items a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 1rem;
+    font-family:"Nobel", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+  .heading .nav-items a:hover {
+    color: black;
+    transition: 0.5s;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main-div {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    margin-top: 50px;
+  }
+  .left-part {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+  }
+  .left-part img {
+    width: 94%;
+    margin-top: 23%;
+    margin-bottom: 77%;
+    margin-left: 3%;
+  }
+  .left-part h2 {
+    color: #009E5F;
+    margin-top: -79%;
+    text-align: center;
+    font-weight: 750;
+    font-size: 30px;
+    font-family: "Nobel", Helvetica, Arial, sans-serif;
+  }
+  .left-part .exp-botton {
+    text-align: center;
+  }
+  .left-part .exp-botton a .btn {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5%;
+    background: none;
+    border: 3px solid #019358;
+    color: #009e5e;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.4s liner;
+    position: relative;
+  }
+  .left-part .exp-botton a .btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #009e5f;
+  }
+  .left-part .exp-botton a .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #16c981;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  .left-part .exp-botton a .btn::before {
+    transform: scaleX(0);
+  }
+  .left-part .exp-botton a .btn:hover::before {
+    transform: scaleX(1);
+  }
+  .right-part {
+    margin-top: -47%;
+    margin-left: 30%;
+  }
+  .right-part img {
+    width: 100%;
+    height: 100%;
+  }
+  /* first part end */
+  
+  .second-part {
+    background-image: url(../images/7up-simple-banner.png);
+    height: 900px;
+    margin-top: -31px;
+  }
+  .second-part h1 {
+    padding: 0px 0px 10px 0px;
+    margin-top: 50%;
+    margin-bottom: 47%;
+  }
+  
+  /* SECOND PART START */
+  
+  .new_simple_7UP h1 {
+    margin-top: -110px;
+  }
+  
+  .new_simple_7UP {
+    height: 900px;
+    background-image: url(/images/7up-simple-banner.png);
+    margin-top: 8%;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new_simple_7UP h1 {
+    color: white;
+    font-size: 66px;
+    padding: 0px 0px 10px 0px;
+    font-weight: 700;
+    /* font-family: "Nobel", Helvetica, Arial, sans-serif; */
+  }
+  
+  .new_simple_7UP h3 {
+    color: white;
+    font-size: 26px;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .new_simple_7UP input {
+    width: 200px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: white;
+    border: 5px solid #009e5f;
+    color: #009e5f;
+    cursor: pointer;
+  }
+  
+  .new_simple_7UP input:hover {
+    background-color: #039f5f;
+    color: white;
+  }
+  
+  .new_simple_7UP {
+    padding: 20% 0% 0% 10%;
+  }
+  
+  .heading_1 {
+    text-align: center;
+  }
+  
+  .cocktail_recipes .box {
+    background-image: url(/images/module_cocktail.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 650px;
+  }
+  
+  .box {
+    padding: 300px 600px;
+  }
+  
+  .heading_1 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .box h2 {
+    padding: 25px;
+    background-color: #fe5887;
+    
+  }
+  
+  .box:hover h2 {
+    margin-left: -50px;
+    margin-right: -50px;
+    font-size: 37px;
+    font-weight: 900;
+    color: #31000dfe;
+  }
+  
+  .heading_2 {
+    text-align: center;
+  }
+  
+  .cooking_recipes {
+    background-image: url(/images/module_cooking.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+  }
+  
+  .box_2 {
+    padding: 300px 600px;
+  }
+  
+  .heading_2 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .box_2 h2 {
+    padding: 25px;
+    background-color: #fe5887;
+  }
+  
+  .box_2:hover h2 {
+    margin-left: -50px;
+    margin-right: -50px;
+    font-size: 37px;
+    font-weight: 900;
+    color: #31000dfe;
+  }
+  
+  .heading_3 {
+    text-align: center;
+  }
+  
+  .See_all_recipes {
+    background-image: url(/images/module_seeall.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+  }
+  
+  .box_3 {
+    padding: 300px 600px;
+  }
+  
+  .heading_3 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .box_3 h2 {
+    padding: 25px;
+    background-color: #fe5887;
+  }
+  
+  .box_3:hover h2 {
+    margin-left: -50px;
+    margin-right: -50px;
+    font-size: 37px;
+    font-weight: 900;
+    color: #31000dfe;
+  }
+  
+  .drink_can {
+    display: flex;
+    width: 100%;
+    height: 800px;
+  }
+  
+  .left_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left_side .can_1 {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .left_side .can_1:hover img {
+    width: 150px;
+    
+  }
+  
+  .left_side .can_2 {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .left_side .can_2:hover img {
+    width: 150px;
+  }
+  
+  .left_side .can_3 {
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .left_side .can_3:hover img {
+    width: 150px;
+  }
+  
+  .left_side .can_4 {
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .left_side .can_4:hover img {
+    width: 150px;
+  }
+  
+  .left_side img {
+    padding: 5px;
+  }
+  
+  .right_side {
+    width: 50%;
+    height: 100%;
+    background: #ececec;
+  }
+  
+  .top_right {
+    padding: 84px 100px 69px 82px ;
+  }
+  
+  .right_side .top_right h1 {
+    display: flex;
+    position: relative;
+    font-size: 90px;
+    color: rgb(2, 166, 79);
+    font-size: 84px;
+    font-weight: 700;
+    font-family:"Nobel", Helvetica, Arial, sans-serif;
+  }
+  
+  .right_side .top_right span {
+    position: absolute;
+    top: 66.6%;
+    left: 18.3%;
+    color: red;
+    font-family: Times, times new roman, serif;
+  }
+  
+  .right_side .top_right p {
+    font-size: 20px;
+    color: #818182;
+    font-family:"Nobel", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+  
+  .right_part_bottom img {
+    width: 600px;
+    padding: 0px 100px;
+    margin-top: 30px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 800px;
+    padding-top: 25px;
+    background-image: url(/images/footer-bg.jpg);
+    background-size: cover;
+  }
+  
+  .ENJOY_7UP {
+    width: 500px;
+    height: 50px;
+    margin: 8% 50%;
+  }
+  
+  .ENJOY_7UP h1 {
+    text-align: center;
+    background-color: #c42119;
+    transform: matrix(1, -0.4513, 0, 1, 21.8691, 152.353);
+    font-size: 89px;
+    color: rgb(255, 255, 255);
+    height: 120px;
+    font-family: 'bourbon';
+  }
+  
+  .footer_over {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 454px;
+    padding: 7px;
+    max-width: 1068px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .footer {
+    margin: 5px;
+    font-size: 13px;
+  }
+  
+  .first_text {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .first_text a {
+    text-decoration: none;
+    color: #636363;
+    padding: 0px 5px;
+    font-size: 25px;
+    
+  }
+  
+  .middle_text {
+    text-align: center;
+    margin-top: 14px; 
+  }
+  
+  .middle_text a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #636363;
+    padding: 0px 5px;
+    font-family:"Nobel", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    
+  }
+  
+  .last_text {
+    margin: 0px 61.4px;
+    text-align: center;
+    color: #636363;
+    font-size: 13px;
+    font-weight: 600;
+  }
